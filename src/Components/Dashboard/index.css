@@ -23,7 +23,7 @@
   border-radius: 15px;
 }
 .dashboard .left .top .card .card-inner {
-  padding-right: 25%;
+  width: 75%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -306,6 +306,9 @@ button.sdp--square-btn.sdp--date-btn.sdp--text.sdp--text__inactive {
 @media screen and (max-width: 480px) {
   .content-title {
     font-size: 2rem;
+  }
+  .dashboard .left .top .card .card-inner {
+    width: 100%;
   }
   div.sdp--dates-grid {
     gap: 6px;
