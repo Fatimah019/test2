@@ -14,8 +14,7 @@ main {
   main {
     margin-left: 0px;
     margin-right: 0px;
-    background-color: red;
-    padding: 0;
+    padding: 0px 60px;
     width: 100%;
     margin: auto;
   }

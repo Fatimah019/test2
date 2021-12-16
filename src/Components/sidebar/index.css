@@ -5,12 +5,9 @@
   padding: 0;
   top: 209.5px;
   width: 159px;
-  /* height: calc(100vh - 209.5px); */
   display: flex;
   flex-direction: column;
-  /* align-content: space-between; */
   align-items: flex-end;
-  /* background-color: yellow; */
 }
 
 .side-bar ul {
@@ -48,17 +45,14 @@
 }
 
 .side-bar ul li .menu-icon img {
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .side-bar .elipsis {
-  /* background-color: red; */
   text-align: right;
 }
 .side-bar .elipsis img {
   object-fit: contain;
-  /* width: 34px; */
-  /* height: 8px; */
   margin-right: 1rem;
 }
 
