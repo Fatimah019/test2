@@ -95,13 +95,14 @@ const Dashboard = () => {
                 {contactData.map((data, index) => {
                   return (
                     <div
+                      key={index}
                       style={{
                         display: "flex",
                         alignItems: "center",
                         justifyContent: "space-between",
                       }}
                     >
-                      <div key={index} className="contact-box">
+                      <div className="contact-box">
                         <img src={data.picture} alt="contactimg" />
                         <div>
                           <p className="contact-name">{data.name}</p>
@@ -115,15 +116,16 @@ const Dashboard = () => {
               </div>
             </div>
             <div className="graph">
-              <div className="header">
-                <p>Half Year Work Results</p>
-                <Link to="/browse-more" className="view-all">
-                  Browse more
-                </Link>
-              </div>
-              <div className="body">
-                {" "}
-                <LineChart />
+              <div className="graph-inner">
+                <div className="header">
+                  <p>Half Year Work Results</p>
+                  <Link to="/browse-more" className="view-all">
+                    Browse more
+                  </Link>
+                </div>
+                <div className="body">
+                  <LineChart />
+                </div>
               </div>
             </div>
           </div>
