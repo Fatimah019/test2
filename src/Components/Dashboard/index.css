@@ -122,7 +122,9 @@
   border-radius: 15px;
   padding: 1.5rem 1rem;
 }
-
+.dashboard .left .bottom .graph-inner {
+  height: 100%;
+}
 .dashboard .left .bottom .contact .header {
   display: flex;
   align-items: center;
@@ -137,6 +139,7 @@
 .dashboard .left .bottom .contact .header p {
   font-size: 1.5rem;
   margin: 0;
+  margin-right: 0.5rem;
 }
 .dashboard .left .bottom .contact .contact-box {
   display: flex;
@@ -165,6 +168,7 @@
 }
 .dashboard .left .bottom .graph .body {
   margin-top: 1.4375rem;
+  height: auto;
 }
 .dashboard .left .bottom .graph .header p {
   margin: 0;
@@ -184,8 +188,15 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  /* height: 623px; */
+  height: 623px;
+  overflow-y: auto;
+}
+.calendar-section::-webkit-scrollbar {
+  display: none;
+}
+
+div.sdp {
+  padding: 0;
 }
 div.sdp.undefined {
   background-color: transparent;
@@ -195,6 +206,7 @@ div.sdp.undefined {
 div.sdp--dates-grid {
   gap: 8px;
 }
+
 .sdp--month-picker {
   font-size: 24px;
   white-space: nowrap;
@@ -285,17 +297,29 @@ button.sdp--square-btn.sdp--date-btn.sdp--text.sdp--text__inactive {
   .dashboard {
     grid-template-columns: repeat(1, auto);
   }
-}
-
-@media screen and (max-width: 768px) {
   .dashboard .left .top .card .ball-img,
   .dashboard .left .top .card .user-img {
-    position: absolute;
-    object-fit: contain;
-    top: 15%;
-    right: 0rem;
-    width: 76px;
-    height: 78px;
     display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .content-title {
+    font-size: 2rem;
+  }
+  div.sdp--dates-grid {
+    gap: 6px;
+  }
+  .sdp--month-picker {
+    font-size: 16px;
+  }
+  .sdp--text__inactive.sdp--text__inactive {
+    font-size: 14px;
+  }
+  .sdp .sdp--square-btn {
+    height: 16px;
+    width: 16px;
+    width: 0.8rem;
+    font-size: 11px;
   }
 }
