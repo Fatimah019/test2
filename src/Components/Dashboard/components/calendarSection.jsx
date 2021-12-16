@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import DatePicker from "sassy-datepicker";
-// import "./index.css";
 
 const scheduleData = [
   {
