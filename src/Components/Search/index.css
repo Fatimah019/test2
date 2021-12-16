@@ -1,0 +1,22 @@
+form .search-container {
+  padding: 1.188rem 1rem 1.188rem 1rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 3px solid var(--secondary-color);
+}
+form .search-container img {
+  margin-right: 1.5rem;
+  object-fit: contain;
+}
+form input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #fff;
+  font-size: 1.125rem;
+}
+
+form input::placeholder {
+  font-size: 1.125rem;
+  color: rgba(255, 255, 255, 0.5);
+}
