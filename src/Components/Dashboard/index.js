@@ -1,8 +1,8 @@
 import React from "react";
 import "./index.css";
-import CalendarSection from "./calendarSection";
+import CalendarSection from "./components/calendarSection";
 import { Link } from "react-router-dom";
-import LineChart from "./lineChart";
+import LineChart from "./components/lineChart";
 import ReactLogo from "./mami.svg";
 import CustomSwitch from "./switch";
 
