@@ -203,6 +203,9 @@ div.sdp--dates-grid {
   color: #fff;
   font-size: 14px;
 }
+button.sdp--square-btn.sdp--date-btn.sdp--text.sdp--text__inactive {
+  color: rgba(255, 255, 255, 0.5);
+}
 .sdp .sdp--square-btn {
   align-items: center;
   background-color: transparent;
@@ -285,12 +288,14 @@ div.sdp--dates-grid {
 }
 
 @media screen and (max-width: 768px) {
-  .dashboard .left .top .card .ball-img {
+  .dashboard .left .top .card .ball-img,
+  .dashboard .left .top .card .user-img {
     position: absolute;
     object-fit: contain;
     top: 15%;
     right: 0rem;
     width: 76px;
     height: 78px;
+    display: none;
   }
 }
