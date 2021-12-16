@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "Poppins Normal";
+  src: url("./font/Poppins-Regular.ttf");
+  src: url("./font/Poppins-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  --primary-text-color: #fff;
+  --secondary-color: #008e8a;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-size: 1rem;
+  background-color: #040415;
+  font-family: "Poppins Normal";
+  color: var(--primary-text-color);
+  font-size: 1.125rem;
+  min-height: 100%;
+}
