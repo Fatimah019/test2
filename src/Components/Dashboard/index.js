@@ -109,7 +109,11 @@ const Dashboard = () => {
                           <p className="contact-title">{data.title}</p>
                         </div>
                       </div>
-                      <img src="/assets/icons/elipsis.png" alt="seemore" />
+                      <img
+                        src="/assets/icons/elipsis.png"
+                        alt="seemore"
+                        role="button"
+                      />
                     </div>
                   );
                 })}
