@@ -31,7 +31,7 @@ const contactData = [
 
 const Dashboard = () => {
   return (
-    <div>
+    <div className="dashboard-container">
       <h3 className="content-title">Dashboard</h3>
       <div className="dashboard">
         <div className="left">
@@ -109,7 +109,11 @@ const Dashboard = () => {
                           <p className="contact-title">{data.title}</p>
                         </div>
                       </div>
-                      <img src="/assets/icons/elipsis.png" alt="seemore" />
+                      <img
+                        src="/assets/icons/elipsis.png"
+                        alt="seemore"
+                        role="button"
+                      />
                     </div>
                   );
                 })}
