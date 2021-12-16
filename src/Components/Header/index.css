@@ -9,8 +9,8 @@ header {
   background-color: #040415;
   margin-top: 50px;
   margin-bottom: 36px;
-  margin-left: 60px;
-  margin-right: 60px;
+  padding-left: 60px;
+  padding-right: 60px;
   flex-wrap: wrap;
   align-items: center;
 }
@@ -22,7 +22,7 @@ header h1 {
   line-height: 36px;
   padding-right: 1rem;
 }
-header .header-right {
+header .nav .header-right {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -32,11 +32,11 @@ header .header-right .date {
   margin-right: 1.625rem;
   font-size: 1.375rem;
 }
-header .header-right .search-box {
+header .nav .header-right .search-box {
   width: 300px;
   margin-right: 4rem;
 }
-header .header-right .user-profile {
+header .nav .header-right .user-profile {
   display: flex;
   align-items: center;
 }
@@ -68,7 +68,8 @@ header .header-right .user-profile img {
   max-width: 100%;
 }
 
-.fa-bars {
+.fa-bars,
+.fa-close {
   color: #fff;
   font-size: 1.5rem;
   cursor: pointer;
@@ -76,10 +77,26 @@ header .header-right .user-profile img {
 }
 
 @media screen and (max-width: 900px) {
-  header .header-right {
+  .fa-bars,
+  .fa-close {
+    display: inline;
+  }
+
+  header nav .header-right {
+    position: fixed;
+    top: 122px;
+    background-color: #040415;
+    right: 0;
+    left: 0;
+    padding: 1rem 60px;
+  }
+  header .nav {
     display: none;
   }
-  .fa-bars {
-    display: block;
+}
+@media screen and (max-width: 480px) {
+  header .nav .header-right .search-box {
+    width: 100%;
+    margin-right: 0ren;
   }
 }
