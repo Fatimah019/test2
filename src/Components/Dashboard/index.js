@@ -31,7 +31,7 @@ const contactData = [
 
 const Dashboard = () => {
   return (
-    <div>
+    <div className="dashboard-container">
       <h3 className="content-title">Dashboard</h3>
       <div className="dashboard">
         <div className="left">
